@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Main gradient - electric cyan to purple -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="50%" style="stop-color:#7B2FFF"/>
+      <stop offset="100%" style="stop-color:#FF2DAF"/>
+    </linearGradient>
+    
+    <!-- Core glow gradient -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#7B2FFF;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#7B2FFF;stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Node gradient -->
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00F0FF"/>
+      <stop offset="100%" style="stop-color:#B066FF"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Line glow -->
+    <filter id="lineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Connection lines from center to outer nodes -->
+  <g filter="url(#lineGlow)" opacity="0.5">
+    <line x1="256" y1="256" x2="256" y2="80" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="380" y2="132" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="432" y2="256" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="380" y2="380" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="256" y2="432" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="132" y2="380" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="80" y2="256" stroke="url(#mainGradient)" stroke-width="3"/>
+    <line x1="256" y1="256" x2="132" y2="132" stroke="url(#mainGradient)" stroke-width="3"/>
+  </g>
+  
+  <!-- Outer ring (orbit) -->
+  <circle cx="256" cy="256" r="155" fill="none" stroke="url(#mainGradient)" stroke-width="2" opacity="0.25"/>
+  
+  <!-- AI Agent nodes (the crew) -->
+  <g filter="url(#glow)">
+    <circle cx="256" cy="80" r="22" fill="url(#nodeGradient)"/>
+    <circle cx="380" cy="132" r="20" fill="url(#nodeGradient)"/>
+    <circle cx="432" cy="256" r="22" fill="url(#nodeGradient)"/>
+    <circle cx="380" cy="380" r="20" fill="url(#nodeGradient)"/>
+    <circle cx="256" cy="432" r="22" fill="url(#nodeGradient)"/>
+    <circle cx="132" cy="380" r="20" fill="url(#nodeGradient)"/>
+    <circle cx="80" cy="256" r="22" fill="url(#nodeGradient)"/>
+    <circle cx="132" cy="132" r="20" fill="url(#nodeGradient)"/>
+  </g>
+  
+  <!-- Central orchestrator core -->
+  <circle cx="256" cy="256" r="55" fill="url(#coreGlow)" filter="url(#glow)"/>
+  
+  <!-- Inner hexagon -->
+  <polygon points="256,211 295,234 295,278 256,301 217,278 217,234" fill="none" stroke="#00F0FF" stroke-width="3.5" opacity="0.9"/>
+  
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="10" fill="#00F0FF"/>
+</svg>
