@@ -1,0 +1,252 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guides/api-keys-and-provider-credentials" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>API Keys and Provider Credentials | CrewDeck Docs</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://docs.crewdeck.ai/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://docs.crewdeck.ai/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://docs.crewdeck.ai/guides/api-keys-and-provider-credentials /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="API Keys and Provider Credentials | CrewDeck Docs"/><meta data-rh=true name=description content="CrewDeck works with several AI and developer services. Some features need a key or a sign-in from one of them, and many features need nothing at all. This guide lists which credential each feature needs, where you enter it in the app, and where to get it."/><meta data-rh=true property=og:description content="CrewDeck works with several AI and developer services. Some features need a key or a sign-in from one of them, and many features need nothing at all. This guide lists which credential each feature needs, where you enter it in the app, and where to get it."/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:section content=guide /><meta data-rh=true property=article:published_time content=2026-11-15T00:00:00Z /><meta data-rh=true property=article:modified_time content=2026-11-15T00:00:00Z /><meta data-rh=true property=article:tag content=guide /><meta data-rh=true property=article:tag content=settings /><meta data-rh=true property=article:tag content=credentials /><meta data-rh=true property=article:tag content=api-keys /><meta data-rh=true name=keywords content="guide, settings, credentials, api-keys"/><link data-rh=true rel=icon href=/img/crewdeck-icon.png /><link data-rh=true rel=canonical href=https://docs.crewdeck.ai/guides/api-keys-and-provider-credentials /><link data-rh=true rel=alternate href=https://docs.crewdeck.ai/guides/api-keys-and-provider-credentials hreflang=en /><link data-rh=true rel=alternate href=https://docs.crewdeck.ai/guides/api-keys-and-provider-credentials hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://docs.crewdeck.ai/guides","name":"Guides","position":1},{"@type":"ListItem","item":"https://docs.crewdeck.ai/guides/api-keys-and-provider-credentials","name":"API Keys and Provider Credentials","position":2}]}</script><link rel=stylesheet href=/assets/css/styles.1b13ef95.css /><script src=/assets/js/runtime~main.a0f4493b.js defer></script><script src=/assets/js/main.6bb973ce.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-4ed")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"dark"),document.documentElement.setAttribute("data-theme-choice",t||"dark")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/crewdeck-icon.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/crewdeck-icon.svg alt="CrewDeck Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/crewdeck-icon.svg alt="CrewDeck Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">CrewDeck</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/>Docs</a><a class="navbar__item navbar__link" href=/tags>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><svg aria-hidden=true class=searchIcon_T3tP focusable=false viewBox="0 0 16 16"><path fill=currentColor d="M6.02945 10.20327a4.17382 4.17382 0 1 1 4.17382-4.17382 4.15609 4.15609 0 0 1-4.17382 4.17382Zm9.69195 4.2199-4.8225-4.82338A5.88021 5.88021 0 0 0 12.058 6.02856 6.00467 6.00467 0 1 0 9.59979 10.8989l4.82338 4.82338a.89729.89729 0 0 0 1.29912 0 .89749.89749 0 0 0-.00087-1.29909Z"/></svg><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/><span class=linkLabel_WmDU>CrewDeck Documentation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/guides><span class=categoryLinkLabel_W154>Guides</span></a><button aria-label="Collapse sidebar category 'Guides'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/guides/api-keys-and-provider-credentials><span class=linkLabel_WmDU>API Keys and Provider Credentials</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/guides/user-guide><span class=linkLabel_WmDU>CrewDeck User Guide</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/releases><span class=categoryLinkLabel_W154>Releases</span></a><button aria-label="Expand sidebar category 'Releases'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/guides><span>Guides</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>API Keys and Provider Credentials</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class=metaBar_N2kO aria-label="Document metadata"><div class=row_Ri4R><span class=badge_j7QL style=--c:#10b981 title="Document type"><span class=value_fjba>guide</span></span><span class=badge_j7QL style=--c:var(--ifm-color-emphasis-600) title="Primary subsystem"><span class=label_Pc4y>domain</span><span class=value_fjba>settings</span></span><span class=badge_j7QL style=--c:var(--ifm-color-emphasis-500) title="Lifecycle status"><span class=label_Pc4y>status</span><span class=value_fjba>active</span></span></div><div class=row_Ri4R><span class=dateItem_AFTm title="First commit date (from git history)"><span class=dateLabel_w7oX>Created</span> <!-- -->Nov 15, 2026</span></div><div class=row_Ri4R><span class=tag_BEnh>#<!-- -->guide</span><span class=tag_BEnh>#<!-- -->credentials</span><span class=tag_BEnh>#<!-- -->api-keys</span><span class=tag_BEnh>#<!-- -->settings</span></div><div class=row_Ri4R><a class=flagLink_xTMr href="https://github.com/cloudnnj/crewdeck/issues/new?template=doc-removal.yml&labels=docs-removal&title=%5Bdocs%5D+Remove%3A+API+Keys+and+Provider+Credentials&doc-path=.public-docs%2Fguides%2Fapi-keys-and-provider-credentials.md&doc-title=API+Keys+and+Provider+Credentials&doc-context=type%3A+guide+%C2%B7+last+updated%3A+2026-11-15" target=_blank rel="noopener noreferrer" title="Open a prefilled GitHub issue proposing this page be removed">⚑ Flag for removal</a></div></div><div class="theme-doc-markdown markdown"><header><h1>API Keys and Provider Credentials</h1></header>
+<p>CrewDeck works with several AI and developer services. Some features need a key or a sign-in from one of them, and many features need nothing at all. This guide lists which credential each feature needs, where you enter it in the app, and where to get it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary>Summary<a href=#summary class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Feature<th>Credential<th>Required?<th>Where to set it<tbody><tr><td>Agent runs on the Codex (OpenAI) backend<td>ChatGPT sign-in (device code) <strong>or</strong> an OpenAI API key<td>Yes, one of the two<td>AI & Tools → Codex Authentication<tr><td>Agent runs on Claude Code<td>Claude OAuth token, an Anthropic API key, <strong>or</strong> your existing Claude Code login<td>Yes, one of the three (Claude Code login is the default)<td>AI & Tools → Claude Authentication<tr><td>LLM calls routed to Anthropic<td>Anthropic API key<td>Only if Anthropic is your active provider<td>Integrations → LLM Provider → Anthropic Platform API Key<tr><td>LLM calls routed to OpenAI<td>OpenAI API key<td>Only if OpenAI is your active provider<td>Integrations → LLM Provider → OpenAI Platform API Key<tr><td>LLM calls routed to Google Gemini<td>Google Gemini API key<td>Only if Gemini is your active provider<td>Integrations → LLM Provider → Google Gemini API Key<tr><td>xAI (Grok)<td>Not selectable yet<td>Not available<td>Shown as "coming soon"<tr><td>Release podcast audio<td>OpenAI API key<td>Yes<td>Integrations → OpenAI TTS Model<tr><td>News podcast audio<td>OpenAI API key<td>Yes<td>Integrations → OpenAI TTS Model<tr><td>Voice dictation<td>OpenAI API key<td>Yes<td>Integrations → Voice Dictation<tr><td>GitHub (clone repos, pull requests, discover agents)<td>GitHub personal access token <strong>or</strong> GitHub sign-in with an OAuth App Client ID<td>Yes, for GitHub features<td>Integrations → GitHub Integration<tr><td>Jira issue import<td>Jira site URL, account email and API token<td>Optional<td>Integrations → Jira fields<tr><td>SonarCloud code-quality checks<td>SonarCloud token<td>Optional<td>Integrations → Code Quality → Sonar API Key<tr><td>Codacy code-quality checks<td>Codacy account token<td>Optional<td>Integrations → Code Quality → Codacy API Key<tr><td>Semantic search and embeddings<td>None (runs on a local Ollama install)<td>No key needed<td>Diagnostics (shows Ollama status)<tr><td>Custom secrets for MCP servers<td>Values you define<td>Optional<td>AI & Tools → Custom Secrets<tr><td>Cloud sync<td>CrewDeck cloud sync account sign-in<td>Optional<td>CloudSync tab</table>
+<p>Kanban boards, projects, repositories you add from a local folder, manual tasks and terminal sessions do not need any key.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=before-you-start>Before you start<a href=#before-you-start class=hash-link aria-label="Direct link to Before you start" title="Direct link to Before you start" translate=no>​</a></h2>
+<p>Open Settings. The tabs that matter for credentials are:</p>
+<ul>
+<li class=""><strong>Integrations</strong>: LLM Provider, OpenAI TTS Model, Voice Dictation, GitHub Integration, Jira, and Code Quality.</li>
+<li class=""><strong>AI & Tools</strong>: Claude Authentication, Codex Authentication, Custom Secrets and MCP server settings.</li>
+<li class=""><strong>CloudSync</strong>: cloud sync sign-in.</li>
+</ul>
+<p>Credential panels show a "configured" message once a key is saved, and a <strong>Remove API Key</strong> button you can use to delete it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=agent-runs>Agent runs<a href=#agent-runs class=hash-link aria-label="Direct link to Agent runs" title="Direct link to Agent runs" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=codex-openai-backend>Codex (OpenAI) backend<a href=#codex-openai-backend class=hash-link aria-label="Direct link to Codex (OpenAI) backend" title="Direct link to Codex (OpenAI) backend" translate=no>​</a></h3>
+<p>Codex runs can authenticate in one of two ways. Pick the method under <strong>AI & Tools → Codex Authentication</strong>.</p>
+<ul>
+<li class=""><strong>Device Code (ChatGPT sign-in).</strong> Click <strong>Sign in with Device Code</strong>. CrewDeck starts the <code>codex</code> command-line tool, which shows a short code and a verification link. Enter the code in your browser to finish. This path requires the Codex CLI to be installed and on your command path. CrewDeck does not store the ChatGPT tokens itself.</li>
+<li class=""><strong>OpenAI API Key.</strong> Select <strong>OpenAI API Key</strong> and save an OpenAI key under <strong>Integrations → LLM Provider → OpenAI Platform API Key</strong>. Get the key from <a href=https://platform.openai.com/api-keys target=_blank rel="noopener noreferrer" class="">platform.openai.com</a>.</li>
+</ul>
+<p>If you are signed in with Device Code and also have an API key saved, Codex runs use the Device Code sign-in. The API key is used only when no device sign-in is active.</p>
+<p>Clicking <strong>Clear Login</strong> under Device Code removes the device sign-in.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=claude-code-backend>Claude Code backend<a href=#claude-code-backend class=hash-link aria-label="Direct link to Claude Code backend" title="Direct link to Claude Code backend" translate=no>​</a></h3>
+<p>Pick the method under <strong>AI & Tools → Claude Authentication</strong>. There are three options.</p>
+<ul>
+<li class=""><strong>OAuth Token.</strong> Uses a Claude OAuth token. You can keep several Claude accounts and choose which one a run uses.</li>
+<li class=""><strong>API Key.</strong> Uses an Anthropic API key. Save it under <strong>Integrations → LLM Provider → Anthropic Platform API Key</strong>. Get the key from <a href=https://console.anthropic.com target=_blank rel="noopener noreferrer" class="">console.anthropic.com</a>.</li>
+<li class=""><strong>CLI Fallback.</strong> CrewDeck adds no credential of its own. Claude Code uses whatever login is already on your machine. This is the default when no method has been chosen. You must have Claude Code installed and signed in outside CrewDeck.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=llm-provider-for-prompt-and-assistant-features>LLM provider (for prompt and assistant features)<a href=#llm-provider-for-prompt-and-assistant-features class=hash-link aria-label="Direct link to LLM provider (for prompt and assistant features)" title="Direct link to LLM provider (for prompt and assistant features)" translate=no>​</a></h2>
+<p>Under <strong>Integrations → LLM Provider</strong> you choose an <strong>Active provider</strong> from the drop-down. Features that route to a default LLM use this provider. Each provider has its own key panel, and keys stay saved even when that provider is not active.</p>
+<ul>
+<li class=""><strong>Anthropic (Claude).</strong> Key from <a href=https://console.anthropic.com target=_blank rel="noopener noreferrer" class="">console.anthropic.com</a>. Panel: Anthropic Platform API Key.</li>
+<li class=""><strong>OpenAI.</strong> Key from <a href=https://platform.openai.com/api-keys target=_blank rel="noopener noreferrer" class="">platform.openai.com</a>. Panel: OpenAI Platform API Key.</li>
+<li class=""><strong>Google Gemini.</strong> Key from <a href=https://aistudio.google.com/apikey target=_blank rel="noopener noreferrer" class="">aistudio.google.com</a>. Panel: Google Gemini API Key.</li>
+<li class=""><strong>xAI (Grok).</strong> Shown as "coming soon". Its option cannot be made active yet, so you do not need a key for it.</li>
+</ul>
+<p>Each provider panel has a <strong>Test Connection</strong> button, which is enabled once a key is saved.</p>
+<p>If the active provider has no key saved, features that can fall back do so to Claude Code instead of failing. Save a key for the provider you want to use so that this fallback does not apply.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=podcasts>Podcasts<a href=#podcasts class=hash-link aria-label="Direct link to Podcasts" title="Direct link to Podcasts" translate=no>​</a></h2>
+<p>Podcast generation has two parts: the script and the audio. The audio always uses OpenAI.</p>
+<ul>
+<li class=""><strong>Script.</strong> The script is written by your active LLM provider. If that provider has no key saved, CrewDeck falls back to Claude Code.</li>
+<li class=""><strong>Audio.</strong> Requires an <strong>OpenAI API key</strong>, saved under <strong>Integrations → LLM Provider → OpenAI Platform API Key</strong>. Without it, audio generation cannot run.</li>
+</ul>
+<p>Settings you can change:</p>
+<ul>
+<li class=""><strong>Integrations → OpenAI TTS Model</strong> sets the text-to-speech model. The panel lists the supported models and shows the default.</li>
+<li class=""><strong>Integrations → Release Podcasts Output Folder</strong> sets where release podcast audio is saved.</li>
+<li class=""><strong>Integrations → News Podcasts Output Folder</strong> sets where news podcast audio is saved.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=voice-dictation>Voice dictation<a href=#voice-dictation class=hash-link aria-label="Direct link to Voice dictation" title="Direct link to Voice dictation" translate=no>​</a></h2>
+<p>Voice dictation transcribes your speech with OpenAI. It requires an <strong>OpenAI API key</strong>, saved under <strong>Integrations → LLM Provider → OpenAI Platform API Key</strong>. Set up the feature and the push-to-talk shortcut under <strong>Integrations → Voice Dictation</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=github>GitHub<a href=#github class=hash-link aria-label="Direct link to GitHub" title="Direct link to GitHub" translate=no>​</a></h2>
+<p>GitHub access is needed to clone repositories, work with pull requests and discover agents in GitHub repositories. Set it up under <strong>Integrations → GitHub Integration</strong>. There are two ways to connect.</p>
+<ul>
+<li class=""><strong>Personal Access Token.</strong> Paste a token with the <code>repo</code> scope and click <strong>Connect with PAT</strong>. You can create one in your GitHub account's developer settings.</li>
+<li class=""><strong>GitHub Login.</strong> Sign in through GitHub's device flow. You first need a GitHub OAuth App. Under <strong>Integrations → GitHub Integration → GitHub Login</strong>, enter the OAuth App's <strong>Client ID</strong>. No client secret is needed. Then click <strong>Sign in with GitHub</strong> and follow the code prompt.</li>
+</ul>
+<p>You can also choose where new repositories are created by default.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=jira>Jira<a href=#jira class=hash-link aria-label="Direct link to Jira" title="Direct link to Jira" translate=no>​</a></h2>
+<p>To import Jira issues as tasks, enter the following in the Jira fields under <strong>Integrations</strong>:</p>
+<ul>
+<li class=""><strong>Instance URL</strong>: the address of your Jira site.</li>
+<li class=""><strong>Email</strong>: the email address of your Jira account.</li>
+<li class=""><strong>API Token</strong>: an API token created for that account in your Atlassian account settings.</li>
+</ul>
+<p>Jira is optional. Nothing else in the app depends on it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=code-quality-sonarcloud-and-codacy>Code quality (SonarCloud and Codacy)<a href=#code-quality-sonarcloud-and-codacy class=hash-link aria-label="Direct link to Code quality (SonarCloud and Codacy)" title="Direct link to Code quality (SonarCloud and Codacy)" translate=no>​</a></h2>
+<p>Both are optional. They are under <strong>Integrations → Code Quality</strong>.</p>
+<ul>
+<li class=""><strong>Sonar API Key</strong>: a SonarCloud token. It is passed to agent runs as the Sonar key so that agents can run Sonar checks.</li>
+<li class=""><strong>Codacy API Key</strong>: a Codacy account token. It is passed to agent runs as the Codacy account token so that agents can run Codacy checks.</li>
+</ul>
+<p>If you do not save these, agent runs still work. Code-quality checks just cannot run.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=semantic-search-and-embeddings>Semantic search and embeddings<a href=#semantic-search-and-embeddings class=hash-link aria-label="Direct link to Semantic search and embeddings" title="Direct link to Semantic search and embeddings" translate=no>​</a></h2>
+<p>Semantic search and related features compute embeddings with a model running on your own machine through Ollama. They need no API key. You need Ollama installed and running. Check its status under <strong>Diagnostics</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=telemetry-and-tracing-optional>Telemetry and tracing (optional)<a href=#telemetry-and-tracing-optional class=hash-link aria-label="Direct link to Telemetry and tracing (optional)" title="Direct link to Telemetry and tracing (optional)" translate=no>​</a></h2>
+<p>Telemetry is consent-based. Under <strong>Data & Privacy</strong> you can find the OpenTelemetry consent controls. The license key field for the telemetry endpoint only appears in builds that include an endpoint, and saving that key is only needed for those builds.</p>
+<p>Agent tracing can send traces to an OTLP endpoint you provide. Its settings are also under <strong>Data & Privacy</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=custom-secrets-and-mcp-servers>Custom secrets and MCP servers<a href=#custom-secrets-and-mcp-servers class=hash-link aria-label="Direct link to Custom secrets and MCP servers" title="Direct link to Custom secrets and MCP servers" translate=no>​</a></h2>
+<p>Under <strong>AI & Tools → Custom Secrets</strong> you can store your own named values, for example for an MCP server that needs a token. Only add secrets that a server or tool you use actually requires.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cloud-sync>Cloud sync<a href=#cloud-sync class=hash-link aria-label="Direct link to Cloud sync" title="Direct link to Cloud sync" translate=no>​</a></h2>
+<p>CloudSync uses a CrewDeck cloud sync account. You sign in from the <strong>CloudSync</strong> tab. It is not a third-party provider key.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=how-your-keys-are-stored>How your keys are stored<a href=#how-your-keys-are-stored class=hash-link aria-label="Direct link to How your keys are stored" title="Direct link to How your keys are stored" translate=no>​</a></h2>
+<ul>
+<li class="">Keys are stored with the operating system's secure storage through Electron's safe storage. On macOS this is the Keychain, on Windows it is DPAPI and on Linux it is libsecret or KWallet.</li>
+<li class="">If the operating system's secure storage is not available, CrewDeck falls back to an encrypted file on your machine. In that case the settings screen shows a red warning that the security level is reduced.</li>
+<li class="">Keys are not written to the app's logs. Error messages from the OpenAI and Anthropic clients are replaced with generic messages so that keys are not repeated back to you.</li>
+<li class="">Removing a key with its <strong>Remove API Key</strong> button deletes the stored value.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=troubleshooting>Troubleshooting<a href=#troubleshooting class=hash-link aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Symptom<th>Likely cause<th>Fix<tbody><tr><td>A Codex run says the OpenAI API key is not configured<td>Neither a device sign-in nor an API key is saved<td>Sign in under AI & Tools → Codex Authentication, or save an OpenAI key under Integrations → LLM Provider<tr><td>A Codex run says device authentication is configured but the runner is unavailable<td>The Codex CLI is not installed or not signed in<td>Install the Codex CLI, sign in again with Device Code, or save an OpenAI API key<tr><td>Podcast audio fails<td>No OpenAI API key saved<td>Save an OpenAI key under Integrations → LLM Provider<tr><td>Voice dictation does not record or transcribe<td>No OpenAI API key saved<td>Save an OpenAI key under Integrations → LLM Provider<tr><td>Cannot select xAI as the active provider<td>xAI is not available yet<td>Choose Anthropic, OpenAI or Google Gemini<tr><td>GitHub features fail after a token change<td>The token is missing the <code>repo</code> scope or has expired<td>Create a new token with <code>repo</code> scope and connect again<tr><td>The Settings screen shows reduced security<td>Operating system secure storage is unavailable<td>Fix the system keychain or secret service, then save your keys again</table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=related>Related<a href=#related class=hash-link aria-label="Direct link to Related" title="Direct link to Related" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/guides/user-guide>CrewDeck User Guide</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/guide>guide</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/credentials>credentials</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/api-keys>api-keys</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/settings>settings</a></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/guides><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Guides</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/guides/user-guide><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>CrewDeck User Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#summary class="table-of-contents__link toc-highlight">Summary</a><li><a href=#before-you-start class="table-of-contents__link toc-highlight">Before you start</a><li><a href=#agent-runs class="table-of-contents__link toc-highlight">Agent runs</a><ul><li><a href=#codex-openai-backend class="table-of-contents__link toc-highlight">Codex (OpenAI) backend</a><li><a href=#claude-code-backend class="table-of-contents__link toc-highlight">Claude Code backend</a></ul><li><a href=#llm-provider-for-prompt-and-assistant-features class="table-of-contents__link toc-highlight">LLM provider (for prompt and assistant features)</a><li><a href=#podcasts class="table-of-contents__link toc-highlight">Podcasts</a><li><a href=#voice-dictation class="table-of-contents__link toc-highlight">Voice dictation</a><li><a href=#github class="table-of-contents__link toc-highlight">GitHub</a><li><a href=#jira class="table-of-contents__link toc-highlight">Jira</a><li><a href=#code-quality-sonarcloud-and-codacy class="table-of-contents__link toc-highlight">Code quality (SonarCloud and Codacy)</a><li><a href=#semantic-search-and-embeddings class="table-of-contents__link toc-highlight">Semantic search and embeddings</a><li><a href=#telemetry-and-tracing-optional class="table-of-contents__link toc-highlight">Telemetry and tracing (optional)</a><li><a href=#custom-secrets-and-mcp-servers class="table-of-contents__link toc-highlight">Custom secrets and MCP servers</a><li><a href=#cloud-sync class="table-of-contents__link toc-highlight">Cloud sync</a><li><a href=#how-your-keys-are-stored class="table-of-contents__link toc-highlight">How your keys are stored</a><li><a href=#troubleshooting class="table-of-contents__link toc-highlight">Troubleshooting</a><li><a href=#related class="table-of-contents__link toc-highlight">Related</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/>Documentation Index</a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 CrewDeck. Built with Docusaurus.</div></div></div></footer></div></body>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrewdeck_docs=self.webpackChunkcrewdeck_docs||[]).push([["5917"],{72879(e){e.exports=JSON.parse('{"tag":{"label":"overview","permalink":"/tags/overview","allTagsPath":"/tags","count":1,"items":[{"id":"README","title":"CrewDeck Documentation","description":"\x3c!--","permalink":"/"}],"unlisted":false}}')}}]);
